@@ -16,6 +16,6 @@
             <li style="margin: 5px;" role="presentation"><a style="text-decoration: none;" href="create.php">Create Listing</a></li>
           </ul>
         </nav>
-        <h3 style="margin-top: 5px;" class="text-muted"></h3>
+        <h3 style="margin-top: 5px;" class="text-muted"><?= SITE_TITLE ?></h3>
       </div>
       

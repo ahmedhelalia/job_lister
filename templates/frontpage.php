@@ -14,15 +14,17 @@ include 'inc/header.php';
     </form>
 </div>
 <h3><?= $title ?></h3>
+<?php foreach($jobs as $job): ?>
     <div class="row marketing">
         <div class="col-md-10">
-            <h4></h4>
-            <p></p>
+            <h4><?= $job->job_title ?></h4>
+            <p><?= $job->description ?></p>
         </div>
         <div class="col-md-2">
             <!-- <a class="btn btn-secondary" href="job.php?id=<?=$job->id?>">View</a> -->
         </div>
     </div>
+<?php endforeach;?>
 <?php 
 include 'inc/footer.php';
 ?>
