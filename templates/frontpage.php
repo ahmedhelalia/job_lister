@@ -24,8 +24,7 @@ include 'inc/header.php';
             <p><?= $job->description ?></p>
         </div>
         <div class="col-md-2">
-            <!-- <a class="btn btn-secondary" href="job.php?id=<?=$job->id?>">View</a> -->
-        </div>
+           <a class="btn btn-secondary" href="job.php?id=<?=$job->id?>">View</a>
     </div>
 <?php endforeach;?>
 <?php 
