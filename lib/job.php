@@ -87,9 +87,22 @@ class Job
         $this->db->bind(':contact_user', $data['contact_user']);
         $this->db->bind(':contact_email', $data['contact_email']);
         //Execute
-        if($this->db->execute()){
+        if ($this->db->execute()) {
             return true;
-        }else{
+        } else {
+            return false;
+        }
+    }
+    // Delete Job
+    public function delete($id)
+    {
+        // Delete Query
+        $this->db->query("DELETE FROM `jobs` WHERE `id` = $id");
+
+        // Execute
+        if ($this->db->execute()) {
+            return true;
+        } else {
             return false;
         }
     }
