@@ -6,10 +6,13 @@ include 'inc/header.php';
     <form action="index.php" method="GET">
         <select name="category" class="form-control">
             <option value="0">Choose Category</option>
-           
+            <?php foreach($categories as $category): ?>
+                <option value="<?= $category->id ?>"><?= $category->name ?></option>
+            <?php endforeach; ?>
         </select>
         <br>
         <input type="submit" class="btn btn-lg btn-success" value="Find">
+        <br>
         <br>
     </form>
 </div>
