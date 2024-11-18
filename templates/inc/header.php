@@ -18,4 +18,5 @@
         </nav>
         <h3 style="margin-top: 5px;" class="text-muted"><?= SITE_TITLE ?></h3>
       </div>
+      <?php displayMessage();?>
       
